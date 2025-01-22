@@ -1,0 +1,16 @@
+[options]
+mode bmc
+depth 10
+
+[engines]
+smtbmc z3
+
+
+
+[script]
+read -formal fifoorg.sv
+prep -top fifo
+
+[files]
+fifoorg.sv
+
